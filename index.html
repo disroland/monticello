@@ -8,47 +8,74 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="icon" href="img/favicon.png">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 <body>
-	<header>
-		<div class="bg-wrap">
-			<div class="container">
-				<div class="nav-bar">
+	
+	<div class="nav-bar">
 					<div class="logo">
 						<img src="img/logo.png" alt="logo">
 					</div>
-					<ul class="nav-menu">
-						<li class="nav-item">about us</li>
-						<li class="nav-item">projects</li>
-						<li class="nav-item">news</li>
-						<li class="nav-item">contact</li>
-					</ul>
+					<div class="nav-menu">
+						<a class="nav-item" href="#block1">about us</a>
+						<a class="nav-item" href="#block2">projects</a>
+						<a class="nav-item" href="#block3">news</a>
+						<a class="nav-item" href="#block4">contact</a>
+					</div>
 
 					<div class="socials">
-						<div class="sn"><img src="img/facebook.png" alt="facebook"></div>
-						<div class="sn"><img src="img/twitter.png" alt="twitter"></div>
-						<div class="sn"><img src="img/insta.png" alt="insta"></div>	
+						<a href="https://www.facebook.com/" target="blanc" class="sn"><img src="img/facebook.png" alt="facebook"></a>
+						<a href="https://twitter.com" target="blanc" class="sn"><img src="img/twitter.png" alt="twitter"></a>
+						<a href="https://instagram.com" target="blanc" class="sn"><img src="img/insta.png" alt="insta"></a>	
 					</div>
 				</div>
 
 
+	<header class="single-item">
+	<div class='header' id='block1'>
+		<div class="bg-wrap">
+			<div class="container">
+				
 				<div class="header-content">
 					<h1>Simple & mordern</h1>
 					<p>We make the world's beautiful every day</p>
 				</div>
 
-				<div class="header-arrow">
+				<a href="#block2" class="header-arrow">
 					<i class="fas fa-chevron-down"></i>
-				</div>
+				</a>
 
 			</div>
+
+
 		</div>
+	</div>
+		<div class='header' id='block1'>
+		<div class="bg-wrap">
+			<div class="container">
+				
+
+
+				<div class="header-content">
+					<h1>mordern & simple</h1>
+					<p>Blah-blah-blah...</p>
+				</div>
+
+				<a href="#block2" class="header-arrow">
+					<i class="fas fa-chevron-down"></i>
+				</a>
+
+			</div>
+
+
+		</div>
+	</div>
 	</header>
 
 	<!-- section1 -->
-	<section class="section1">
+	<section class="section1" id='block2'>
 		<div class="s1-title">
 			<h2>what we do</h2>
 		</div>
@@ -142,7 +169,7 @@
 		</div>
 	</section>
 
-	<section class="section2">
+	<section class="section2" id='block3'>
 		<div class="s2-bg">
 			<div class="container">
 				<div class="s2-title">
@@ -273,7 +300,7 @@
 		</div>
 	</section>
 
-	<section class="section4">
+	<section class="section4" id='block4'>
 		<div class="map"></div>
 		
 	</section>
@@ -302,9 +329,9 @@
 						<img src="img/logo.png" alt="logo">
 					</div>
 					<div class="socials">
-						<div class="sn"><img src="img/facebook.png" alt="facebook"></div>
-						<div class="sn"><img src="img/twitter.png" alt="twitter"></div>
-						<div class="sn"><img src="img/insta.png" alt="insta"></div>	
+						<a href="https://www.facebook.com/" target="blanc" class="sn"><img src="img/facebook.png" alt="facebook"></a>
+						<a href="https://twitter.com" target="blanc" class="sn"><img src="img/twitter.png" alt="twitter"></a>
+						<a href="https://instagram.com" target="blanc" class="sn"><img src="img/insta.png" alt="insta"></a>	
 					</div>
 				</div>
 				<p>Copyrights © 2017 Monticello Group</p><p>|</p><p>Made with <i class="fas fa-heart"></i> by Ga Huy</p>
@@ -312,11 +339,23 @@
 		</div>
 	</footer>
 
+	<div class="ba-modal">
+        <div class="ba-modal-content">
+            <button class="ba-modal-close" aria-label='ba-close-modal'>x
+                
+            </button>
+            <div class="ba-modal-content-wrapper">
+                
+            </div>
+        </div>
+    </div>
+
 	
 
 
 	<!-- scripts -->
-	<script src='jquery-3.4.1.slim.js' defer></script>
+<!-- 	<script src='jquery-3.4.1.slim.js' defer></script>
+ -->	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js' defer></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
 	<script src="slick/slick.js" defer></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI7k2hzPdURepCYA6-frf1sjrduBbV8WY&callback=initMap"
